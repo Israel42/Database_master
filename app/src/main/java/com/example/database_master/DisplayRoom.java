@@ -2,9 +2,13 @@ package com.example.database_master;
 
 public class DisplayRoom {
     String type, imagepath;
-    float number;int price;
+    String number;
+    int price;
 
-    public DisplayRoom(String type, String imagepath, float number, int price) {
+    public DisplayRoom() {
+    }
+
+    public DisplayRoom(String type, String imagepath, String number, int price) {
         this.type = type;
         this.imagepath = imagepath;
         this.number = number;
@@ -27,11 +31,11 @@ public class DisplayRoom {
         this.imagepath = imagepath;
     }
 
-    public float getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(float number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
